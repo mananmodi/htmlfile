@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Mobile viewport optimisation -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style01.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.22.custom.css"/>
+<link rel="stylesheet" type="text/css" href="css/sliding-form.css" />
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+</head>
+<body class="bgNone">
+<div id="popupID" class="registrationID">
+  <div class="arOverlay">
+    <div class="arOverlayTop"></div>
+    <div class="arOverlayWrap">
+      <!-- Start Registration -->
+      <div id="registration" class="container_12">
+        <div class="validationMsg">
+          <p class="thankYou">Thank you! You are just a few steps away from launching your own Record Label. Once we've got the following information, you'll be able to start discovering, supporting and promoting artists and become part of the journey!</p>
+          <span class="cancel"></span> </div>
+        <div class="personalInfo">
+          <div id="navigation" style="display:none;">
+            <ul>
+              <li class="selected"> <a href="javascript:void(0);" class="nextSlideBtn1"> <span class="spacebg"> <span class="btn">1</span> </span> <span class="title">About You</span> </a> </li>
+              <li> <a href="javascript:void(0);" class="nextSlideBtn2"> <span class="spacebg"> <span class="btn">2</span> </span> <span class="title">Create your Label</span> </a> </li>
+              <li> <a href="javascript:void(0);" class="nextSlideBtn3"> <span class="spacebg"> <span class="btn">3</span> </span> <span class="title">Social Accounts</span> </a> </li>
+              <li class="last"> <a href="javascript:void(0);" class="nextSlideBtn4"> <span class="spacebg"> <span class="btn">4</span> </span> <span class="title">Legal</span> </a> </li>
+            </ul>
+          </div>
+          <div id="slidingForm">
+            <div id="steps">
+              <form id="formElem" name="formElem" action="" method="post">
+                <fieldset class="step personalInfoForm zIndex3">
+                <div class="formDetails">
+                  <div class="infoPad">
+                    <div class="row">
+                      <div class="col">
+                        <label for="fname">First Name: <span>*</span></label>
+                        <input type="text" value="Dave" onfocus="this.value=='Dave'?this.value='':this.value=this.value" onblur="this.value==''?this.value='Dave':this.value=this.value" name="fname" id="fname" />
+                      </div>
+                      <div class="col">
+                        <label for="lname">Surname: <span>*</span></label>
+                        <input type="text" name="lname" id="lname" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label for="dob">DoB: <span>*</span></label>
+                        <input type="text" id="datepicker"  value="mm / dd / yyyy" onblur="this.value==''?this.value='mm / dd / yyyy':this.value=this.value" onfocus="this.value=='mm / dd / yyyy'?this.value='':this.value=this.value">
+                      </div>
+                      <div class="col">
+                        <label for="gender">Gender: <span>*</span></label>
+                        <div class="selectBox zIndex3"> <span class="selected"></span>
+                          <!--<span class="selectArrow"></span>-->
+                          <div class="selectOptions"> <span class="selectOption">-- Please Choose --</span> <span class="selectOption">Male</span> <span class="selectOption">Female</span> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row last">
+                      <div class="col">
+                        <label for="nationality">Nationality: <span>*</span></label>
+                        <div class="selectBox zIndex2"> <span class="selected"></span>
+                          <!--<span class="selectArrow"></span>-->
+                          <div class="selectOptions"> <span class="selectOption">-- Please Choose --</span> <span class="selectOption">Option 1</span> <span class="selectOption">Option 2</span> </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label class="marginLeft3px">Music taste:</label>
+                        <div class="selectBox zIndex1"> <span class="selected"></span>
+                          <!--<span class="selectArrow"></span>-->
+                          <div class="selectOptions"> <span class="selectOption">-- Please Choose --</span> <span class="selectOption">
+                            <input type="checkbox" checked="checked" />
+                            <label>Indie</label>
+                            </span> <span class="selectOption">
+                            <input type="checkbox" />
+                            <label>Rock</label>
+                            </span> <span class="selectOption">
+                            <input type="checkbox" />
+                            <label>Electronic</label>
+                            </span> <span class="selectOption">
+                            <input type="checkbox" />
+                            <label>Hiphop</label>
+                            </span> <span class="selectOption">
+                            <input type="checkbox" checked="checked" />
+                            <label>Pop</label>
+                            </span> <span class="selectOption">
+                            <input type="checkbox" />
+                            <label>R&amp;B</label>
+                            </span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="nextSlideBtn" id="nextSlideBtn1"></span> </div>
+                </fieldset>
+                <fieldset class="step personalInfoForm socialMediaForm">
+                <div class="formDetails">
+                  <div class="infoPad infoPad1">
+                    <div class="padBot14">
+                      <label for="labelname">Label Name</label>
+                      <input type="text" name="labelname" id="labelname" class="labelname" />
+                    </div>
+                    <div class="padBot14">
+                      <label for="file">Upload Image</label>
+                      <input type="file" name="file" id="file" size="48" />
+                    </div>
+                    <div>
+                      <label for="profile">Label Profile <span class="help"></span></label>
+                      <textarea cols="10" rows="10" id="profile" name="profile"></textarea>
+                    </div>
+                  </div>
+                  <div class="whatisthis">
+                    <h4>What is this?</h4>
+                    <p>At Crowdbass, your record label is your identity and your reputation. You will be able to sign bands through your label and promote bands through your label.<br />
+                      <br />
+                      You can change this information at any time, but in order to set you up, we need at least a record label.</p>
+                    <span class="nextSlideBtn" id="nextSlideBtn2"></span> </div>
+                </div>
+                </fieldset>
+                <fieldset class="step personalInfoForm">
+                <div class="formDetails">
+                  <div class="socialAccounts">
+                    <div class="intro">
+                      <h3>Link your Crowdbass account to your social media profiles so you can easily promote your artists!</h3>
+                    </div>
+                    <div class="linkToFbTwt"> <span class="linkTo">Link to:</span> <a href="#" class="socialButtonTwitter">Twitter</a> <a href="#" class="socialButtonFacebook">Facebook</a> <span class="nextSlideBtn" id="nextSlideBtn3"></span> </div>
+                  </div>
+                </div>
+                </fieldset>
+                <fieldset class="step personalInfoForm last">
+                <div class="formDetails">
+                  <div class="lastStep"> <span class="legal">Last Step. The legal bits…</span>
+                    <div class="customScrollBg">
+                      <div class="scroll-pane">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                        <ol>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                          <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="linkToFbTwt launchDynamo">
+                    <div class="checkBoxContent">
+                      <input type="checkbox" name="checkbox" id="checkbox1" />
+                      <p>I agree to the Crowdbass Terms and Conditions as above.</p>
+                    </div>
+                    <div class="checkBoxContent">
+                      <input type="checkbox" name="checkbox" id="checkbox2" />
+                      <p>I want to hear about new music and products from Crowdbass and our partners</p>
+                    </div>
+                    <div class="checkBoxContent">
+                      <input type="checkbox" name="checkbox" id="checkbox3" />
+                      <p>I understand the <a href="#">Privacy Policy</a> and I'm fine with how you handle cookies</p>
+                    </div>
+                    <div class="checkBoxContent launchDynamoBtn"> <a href="#" class="noDisplay">Launch Dynamo Records!</a>
+                      <input id="registerButton" type="submit"  value="Launch Dynamo Records!" />
+                    </div>
+                  </div>
+                </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Registration -->
+    </div>
+    <div class="arOverlayBottm"> </div>
+  </div>
+</div>
+<!-- Start Jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Start Sliding Form Jquery -->
+<script type="text/javascript" src="js/sliding-form.js"></script>
+<!-- Start Custom Input File Jquery -->
+<script type="text/javascript" src="js/input-file.js"></script>
+<script type="text/javascript">
+        // Run capabilities test
+        enhance({
+            loadScripts: [
+                'js/jQuery.fileinput.js',
+                'js/file.js'
+            ]
+        });
+    </script>
+<!-- Start Custom Select Jquery -->
+<script type='text/javascript'><!--
+		$(document).ready(function() {
+			enableSelectBoxes();
+		});
+		
+		function enableSelectBoxes(){
+			$('div.selectBox').each(function(){
+				$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+				$(this).attr('value',$(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+				
+				$(this).children('span.selected,span.selectArrow').click(function(){
+					if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+						$(this).parent().children('div.selectOptions').css('display','block');
+					}
+					else
+					{
+						$(this).parent().children('div.selectOptions').css('display','none');
+					}
+				});
+				
+				$(this).find('span.selectOption').click(function(){
+					$(this).parent().css('display','none');
+					$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
+					$(this).parent().siblings('span.selected').html($(this).html());
+				});
+			});				
+		}//-->
+    </script>
+<!-- Start Custom Checkbox Jquery -->
+<script type="text/javascript" src="js/jquery.screwdefaultbuttons.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(checkboxCustom){
+		$('input:checkbox').screwDefaultButtons({
+			checked:"url(images/checkbox-checked.png)",
+			unchecked:"url(images/checkbox-unchecked.png)",
+			width:18,
+			height:16
+		});
+	});
+	</script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript">
+ 	$( "#datepicker" ).datepicker({
+			changeMonth: true,
+			changeYear: true
+		});
+				$("span.cancel").click(function() {
+				  $('.validationMsg').fadeOut('slow', function() {
+  					//  alert('Animation complete.');
+ 					 });
+		});
+    </script>
+<!-- the mousewheel plugin -->
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<!-- End jScrollPanel plugin -->
+ 
+<script type="text/javascript">
+	 	$('.scroll-pane').jScrollPane();
+	 
+	</script>
+<!-- Start CSS Browser -->
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+<!-- End Jquery -->
+</body>
+</html>

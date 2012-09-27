@@ -1,0 +1,16 @@
+﻿.customScrollBg{width:446px; height:185px; background:url(../images/custom-scroll-m-bg.gif) left top no-repeat; position:relative;}
+.slickscrollcontainer
+{
+	width:432px !important;
+    background:url(../images/custom-scroll-bg.gif) right 10px no-repeat;
+	/*position:relative;*/
+}
+
+.slickscroll_vertical_scrollbar
+{
+    position: absolute;
+    width:16px;
+    background:url(../images/custom-scroll-move-bg.png) right 14px no-repeat;
+    cursor:move;
+	margin-left:1px;
+}

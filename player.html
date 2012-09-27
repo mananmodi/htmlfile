@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test video</title>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="openmediaplayer/soundmanager/script/soundmanager2.js"></script>
+    <script type="text/javascript" src="openmediaplayer/openMediaPlayer-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="openmediaplayer/css/style.css"/>
+
+    <script type="text/javascript" src="openmediaplayer-demo/cufon.js"></script>
+
+    <script type="text/javascript">
+
+    /**
+     * These are soundManager settings. There
+     * is no need to change them unless you have
+     * read the soundManager documentation
+     * **/
+
+    soundManager.flashVersion = 9;
+    soundManager.useHighPerformance = true;
+    soundManager.wmode = 'transparent';
+    soundManager.useFastPolling = true;
+    soundManager.url = 'openmediaplayer/soundmanager/swf/';
+    soundManager.debugMode = false;
+
+    /** Open Media Player initialization
+     * Always make sure this call is wrapped in
+     * a $(document).ready() and soundManager.onload
+     * to ensure all dependencies are loaded before
+     * creating the open media player object
+     * **/
+    $(document).ready(function(){
+         soundManager.onload = function(){
+                openMediaPlaylist({
+                    autoPlay:true,
+                    style: 'minimal',
+                    useCufon:true,
+                    cufonFont:'Hattori Hanzo'
+                });
+          }
+    });
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

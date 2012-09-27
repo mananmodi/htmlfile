@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>D002 Artist-Application</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--For For Date picker-->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.22.custom.css"/>
+<!--For jScrollPenl-->
+<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css"/>
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+  <script language="javascript" type="text/javascript">
+ 
+
+    function setDisplay(id, visible) {
+        var o = document.getElementById(id);
+        if (typeof(o) != 'undefined') o.style.display = visible ? 'block' : 'none';
+        if (typeof(o) == 'undefined') alert("Element with id '" + id + "' not found.");
+    }
+	
+	function addAnother(){
+	
+		if(document.getElementById("one").style.display == 'none'){
+			document.getElementById("one").style.display='block';
+		}
+		else{
+			 
+				if(document.getElementById("two").style.display == 'none'){
+				   document.getElementById("two").style.display='block';
+				}
+	 
+				else{
+					if(document.getElementById("three").style.display == 'none'){
+					   document.getElementById("three").style.display='block';
+					}
+					
+					}
+			}
+	 
+ 	}
+    </script>
+
+</head>
+<body>
+<div id="container" >
+  <div id="header">
+    <div class="container_12">
+      <h1 class="grid_4 alpha"><a href="index.html"><img src="images/crowdbass.png" alt="crowdbass" title="crowdbass" /></a></h1>
+      <div class="headerRight">
+        <div class="signIn"><a href="#">Sign in</a> <span>or</span></div>
+        <a href="#" class="arrowButton26"><span><span>Create my label now</span></span></a>
+        <div class="artistLooking">Are you an artist looking to raise funding? <a href="#">Click here</a></div>
+      </div>
+    </div>
+    <div id="mainNav">
+      <div class="container_12">
+        <ul>
+          <li><a href="#">Find Arttists</a></li>
+          <li><a href="#">Our Managers</a></li>
+          <li><a href="#">Charts</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Get in Touch</a></li>
+        </ul>
+        <span id="socialNetwork"> <a href="#"><img src="images/facebook-icon.gif" alt="Facebook" /></a> <a href="#"><img src="images/twitter-icon.gif" alt="Twitter" /></a> </span> </div>
+    </div>
+  </div>
+  <div class="clearfix innerContentWrap">
+    <div class="container_12 artistApplication">
+      <div class="welcomeBox"> <img src="images/delete.png" alt="" class="closeBtn" />
+        <div class="artistWelcome"> Welcome to Crowdbass! You are just a few steps away from applying for funding from the Internet’s leading Crowdfunding music platform. </div>
+      </div>
+      <div class="artistWrap">
+        <div class="artistInformation">
+          <div class="formBox validInfo">
+            <h3>Validation</h3>
+            <ul class="validation">
+              <li>
+                <input type="checkbox"  class="styled"/>
+                <label>We are a group or solo artist looking to raise money to promote a forthcoming album</label>
+              </li>
+              <li>
+                <input type="checkbox"  class="styled"/>
+                <label>We have an album finished (or nearly finished)</label>
+              </li>
+              <li>
+                <input type="checkbox"  class="styled"/>
+                <label>We understand that Crowdbass provides marketing budget and not recording budget</label>
+              </li>
+              <li>
+                <input type="checkbox"  class="styled"/>
+                <label>if our application is successful, we understand we will need to pay Crowdbass £199</label>
+              </li>
+            </ul>
+            <div class="submitValid">
+              <input type="button" value="Agree"  />
+            </div>
+          </div>
+          <div class="clearfix formBox basicInfo">
+            <h3>Basic Information</h3>
+            <ul>
+              <li class="normalLabel">
+                <label>Artist Name</label>
+                <div class="textBoxBig">
+                  <input type="text" />
+                </div>
+              </li>
+              <li class="normalLabel">
+                <label>Genre</label>
+                <div class="selectBox">
+                  <select class="styled">
+                    <option value="Eventsuche">– Choose Genre –</option>
+                    <option value="Genre1">Genre1</option>
+                    <option value="Genre2">Genre2</option>
+                  </select>
+                </div>
+              </li>
+              <li class="doYouHave">
+                <label class="caption">Do you have a Manager</label>
+                <div class="doYouYesNo">
+                  <div class="doYouYes">
+                    <input type="radio"   name="mangeDetLead" onclick="setDisplay('mangeDet', true); setDisplay('LeadDet', false);" />
+                    <label>Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio"  name="mangeDetLead" onclick="setDisplay('LeadDet', true); setDisplay('mangeDet', false);" />
+                    <label>No</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="clearfix managerWrap">
+              <fieldset class="mangeDet" id="mangeDet">
+                <legend>Manager Details</legend>
+                <ul>
+                <li>
+                  <label>Name <span>*</span></label>
+                  <div class="textBoxMedium">
+                    <input type="text" name="mangname" />
+                  </div>
+                </li>
+                <li>
+                  <label>Email <span>*</span></label>
+                  <div class="textBoxMedium">
+                    <input type="text" name="mangname" />
+                  </div>
+                </li>
+                <li>
+                  <label>Phone Number <span>*</span></label>
+                  <div class="textBoxMedium">
+                    <input type="text" name="mangname" />
+                  </div>
+                </li>
+                </ul>
+              </fieldset>
+              <fieldset class="mangeDet LeadDet" id="LeadDet"  >
+                <legend>Lead Contact Details</legend>
+                <ul>
+                <li>
+                  <label>Name <span>*</span></label>
+                  <div class="textBoxMedium">
+                    <input type="text" name="mangname" />
+                  </div>
+                </li>
+                <li>
+                  <label>Email <span>*</span></label>
+                  <div class="textBoxMedium">
+                    <input type="text" name="mangname" />
+                  </div>
+                </li>
+                <li>
+                  <label>Phone Number <span>*</span></label>
+                  <div class="textBoxMedium">
+                    <input type="text" name="mangname" />
+                  </div>
+                </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="clearfix doYouWrap">
+              <div class="lblCaption">
+                <label>Do you have a record label?</label>
+              </div>
+              <div class="doYouMain">
+                <div class="doYouYesNo">
+                  <div class="doYouYes">
+                    <input type="radio" class="fLeft" name="doyRcdlbl" onclick="setDisplay('doYouYesNoWrap', true);" />
+                    <label>Yes</label>
+                  </div>
+                  <div >
+                    <input type="radio" class="fLeft"  name="doyRcdlbl" onclick="setDisplay('doYouYesNoWrap', false);"  />
+                    <label>No</label>
+                  </div>
+                </div>
+                <div id="doYouYesNoWrap">
+                <img src="images/arrow.png" alt="" class="fLeft" />
+                <label class="fLeft">Label Name </label>
+                <div class="labelNameWrap">
+                  <div class="textBoxGray">
+                    <input type="text" name="" />
+                  </div>
+                  <p class="findFrom">Find from list</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix doYouWrap">
+              <div class="lblCaption">
+                <label>Do you have a distribution deal?</label>
+              </div>
+              <div class="doYouMain">
+                <div class="doYouYesNo">
+                  <div class="doYouYes">
+                    <input type="radio" class="fLeft" name="manager" />
+                    <label>Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="fLeft" name="manager" />
+                    <label>No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix doYouWrap">
+              <div class="lblCaption">
+                <label>Do you have a record label?</label>
+                <a href="#"><img src="images/information.png" alt="" /></a></div>
+              <div class="doYouMain">
+                <div class="doYouYesNo">
+                  <div class="doYouYes">
+                    <input type="radio" class="fLeft" name="recLabel" onclick="setDisplay('recLabel', true);" />
+                    <label>Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="fLeft" name="recLabel" onclick="setDisplay('recLabel', false);" />
+                    <label>No</label>
+                  </div>
+                </div>
+                <div id="recLabel">
+                <img src="images/arrow.png" alt="" class="fLeft" />
+                <label class="fLeft">What is it? </label>
+                <div class="labelNameWrap">
+                  <div class="textBoxGray">
+                    <input type="text" name="" />
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix doYouWrap">
+              <div class="lblCaption">
+                <label>Does your release have a Barcode/EAN number?</label>
+                <a href="#"><img src="images/information.png" alt="" /></a></div>
+              <div class="doYouMain">
+                <div class="doYouYesNo">
+                  <div class="doYouYes">
+                    <input type="radio" class="fLeft" name="eanNumber" onclick="setDisplay('eanNumber', true);" />
+                    <label>Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="fLeft" name="eanNumber" onclick="setDisplay('eanNumber', false);" />
+                    <label>No</label>
+                  </div>
+                </div>
+                <div id="eanNumber">
+                <img src="images/arrow.png" alt="" class="fLeft" />
+                <label class="fLeft">What is it? </label>
+                <div class="labelNameWrap">
+                  <div class="textBoxGray">
+                    <input type="text" name="" />
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix doYouWrap">
+              <div class="lblCaption">
+                <label>Does your release have a ISRC number?</label>
+                <a href="#"><img src="images/information.png" alt="" /></a></div>
+              <div class="doYouMain">
+                <div class="doYouYesNo">
+                  <div class="doYouYes">
+                    <input type="radio" class="fLeft" name="irslNumber" onclick="setDisplay('irslNumber', true);" />
+                    <label>Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="fLeft" name="irslNumber"  onclick="setDisplay('irslNumber', false);"  />
+                    <label>No</label>
+                  </div>
+                </div>
+                <div id="irslNumber">
+                <img src="images/arrow.png" alt="" class="fLeft" />
+                <label class="fLeft">What is it? </label>
+                <div class="labelNameWrap">
+                  <div class="textBoxGray">
+                    <input type="text" name="" />
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix doYouWrap">
+              <div class="lblCaption">
+                <label>How do you plan on releasing this album?</label>
+                <a href="#"><img src="images/information.png" alt="" /></a></div>
+              <div class="doYouMain">
+                <div class="doYouYesNo doYouDigital">
+                  <div class="doYouYes">
+                    <input type="radio" class="fLeft" name="manager" />
+                    <label>Digital Only</label>
+                  </div>
+                  <div>
+                    <input type="radio" class="fLeft" name="manager" />
+                    <label>Digital and Physical</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix doYouWrap dateBgWrap">
+              <div class="lblCaption">
+                <label>Proposed album launch date?</label>
+              </div>
+              <div class="dateBg">
+              
+                <input type="text" id="datepicker" />
+              </div>
+            </div>
+            <div class="clearfix artistProdile">
+              <label>Artist Profile</label>
+              <div class="textBoxartistProfile">
+                <textarea rows="10" cols="10"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="formBox membersWrap">
+            <h3>Members</h3>
+            <ul>
+              <li>
+                <label>Name</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Roll</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Bio</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Upload Image</label>
+                <div class="uploadImgWrap">
+                   <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload" name="fileUpload" />
+                        <span class="button">Select</span> </div>
+                    </div>
+                   
+                  <a class="add" href="#">Add &gt;&gt;</a> </div>
+              </li>
+              <li>
+                <label>Twitter</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+            </ul>
+            
+            <ul id="one" style="display:none">
+              <li>
+                <label>Name</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Roll</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Bio</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Upload Image</label>
+                <div class="uploadImgWrap">
+                   <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload" name="fileUpload" />
+                        <span class="button">Select</span> </div>
+                    </div>
+                   
+                  <a class="add" href="#">Add &gt;&gt;</a> </div>
+              </li>
+              <li>
+                <label>Twitter</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+            </ul>
+            <ul id="two" style="display:none">
+              <li>
+                <label>Name</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Roll</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Bio</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Upload Image</label>
+                <div class="uploadImgWrap">
+                   <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload" name="fileUpload" />
+                        <span class="button">Select</span> </div>
+                    </div>
+                   
+                  <a class="add" href="#">Add &gt;&gt;</a> </div>
+              </li>
+              <li>
+                <label>Twitter</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+            </ul>
+            <ul id="three" style="display:none">
+              <li>
+                <label>Name</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Roll</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Bio</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+              <li>
+                <label>Upload Image</label>
+                <div class="uploadImgWrap">
+                   <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload" name="fileUpload" />
+                        <span class="button">Select</span> </div>
+                    </div>
+                   
+                  <a class="add" href="#">Add &gt;&gt;</a> </div>
+              </li>
+              <li>
+                <label>Twitter</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+              </li>
+            </ul>
+            <input type="button" onclick="javascript:addAnother();"  class="addAnother" value="Add another" />
+          </div>
+          <div class="formBox artistInfoWrap">
+            <h3>Artist Information</h3>
+            <p>In order to be selected for Crowdbass funding, you need to supply some tracks for us to listen to. Please only upload original music (no covers!).</p>
+            <ul>
+              <li>
+                <div class="numberWrap">1 </div>
+                <div class="artistInfo">
+                  <div class="trackName">
+                    <label>Select track</label>
+                    <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload1" name="fileUpload1" />
+                        <span class="button">Select</span> </div>
+                    </div>
+      
+                    <a href="#">Add &gt;&gt;</a> </div>
+                  <div class="songName">
+                    <label>Song Name</label>
+                    <div class="songNameText">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="numberWrap">2 </div>
+                <div class="artistInfo">
+                  <div class="trackName">
+                    <label>Select track</label>
+                     <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload3" name="fileUpload3" />
+                        <span class="button">Select</span> </div>
+                    </div>
+                    
+                    <a href="#">Add &gt;&gt;</a> </div>
+                  <div class="songName">
+                    <label>Song Name</label>
+                    <div class="songNameText">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="numberWrap">3 </div>
+                <div class="artistInfo">
+                  <div class="trackName">
+                    <label>Select track</label>
+                     <div class="uploadfile">
+                      <div class="file">
+                        <input type="file" id="fileUpload2" name="fileUpload2" />
+                        <span class="button">Select</span> </div>
+                    </div>
+                    
+                    <a href="#">Add &gt;&gt;</a> </div>
+                  <div class="songName">
+                    <label>Song Name</label>
+                    <div class="songNameText">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="formBox contactTypeWrap">
+            <h3>Contract Type</h3>
+            <div class="contractType">
+              <div class="selectBox">
+                <select class="styled" name="contraType">
+                  <option value="Eventsuche">– Choose Genre –</option>
+                  <option value="Genre1">Genre1</option>
+                  <option value="Genre2">Genre2</option>
+                </select>
+              </div>
+              <div class="contractInfo">
+                <p><strong>Does this sound like you?</strong><br />
+                  <em>Bronze</em> - We are a band signed to a small independent label or are not signed to a label. We have a decent following on Facebook and YouTube. When we headline a gig, we normally play to audiences of 100-250. We have an album recorded or nearly recorded and are looking to raise money to help promote our music.</p>
+                <p><strong>Contract Terms</strong> </p>
+                <ul class="contractTerm">
+                  <li>15,000 contracts</li>
+                  <li>£5 per contract</li>
+                  <li>0.05p per contract</li>
+                  <li>Minimum sale of 650 units</li>
+                  <li>Payout cap at 15,650</li>
+                  <li>Max. capital raised: £75,000</li>
+                  <li>Max. payout: £225,000</li>
+                </ul>
+              </div>
+            </div>
+            <div class="clearfix contractType2">
+              <p>Based on the above, we would like to apply for this type of contract:</p>
+              <ul>
+                <li> <input type="radio" name="contract" class="styled"/>
+                  <label>Bronze</label>
+                 
+                </li>
+                <li><input type="radio" name="contract" class="styled"/>
+                  <label>Silver</label>
+                  
+                </li>
+                <li> <input type="radio" name="contract" class="styled"/>
+                  <label>Platinum</label>
+                 
+                </li>
+                <li> <input type="radio" name="contract" class="styled"/>
+                  <label>Diamond</label>
+                 
+                </li>
+              </ul>
+              <a href="#" class="fRight">FAQs – What does this mean?</a> </div>
+          </div>
+          <div class="formBox contactPurchase">
+            <h3>Contract Purchase Incentives</h3>
+            <div class="cntrWrap">
+              <div class="cntrLeft">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblData">
+                  <tr>
+                    <th>Contracts</th>
+                    <th>Award</th>
+                  </tr>
+                  <tr class="odd">
+                    <td class="numTxt"><span class="editable numClick">5</span>  
+                    </td>
+                    <td> <b class="click" style="display: inline">Click me if you dare!</b>
+                     </td>
+                  </tr>
+                  <tr class="even">
+                    <td class="numTxt"><span class="editable ">5</span><input type="text" class="numeric"  /></td>
+                    <td>Signed CD</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>15</td>
+                    <td>Credited on album cover</td>
+                  </tr>
+                  <tr class="even">
+                    <td>20</td>
+                    <td>Gig tickets &amp; Aftershow Party</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>50</td>
+                    <td>Spend a day touring with the band</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="cntrRight">
+                <p><strong>What is this?</strong><br />
+                  These are incentives for fans to buy bundles of contracts. Our examples<br />
+                  are to give you an idea.</p>
+              </div>
+            </div>
+          </div>
+          <div class="formBox promotionInc">
+            <h3>Promotion Incentives</h3>
+            <div class="cntrWrap">
+              <div class="cntrLeft">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblData">
+                  <tr>
+                    <th>Points</th>
+                    <th>Award</th>
+                  </tr>
+                  <tr class="odd">
+                    <td>100</td>
+                    <td>Shout out on Twitter</td>
+                  </tr>
+                  <tr class="even">
+                    <td>250</td>
+                    <td>20 Questions on Skype</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>500</td>
+                    <td>Free Gig Ticket</td>
+                  </tr>
+                  <tr class="even">
+                    <td>750</td>
+                    <td>Limited Edition Signed EP</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>1000</td>
+                    <td>Signed T-shirt</td>
+                  </tr>
+                  <tr class="even">
+                    <td>1500</td>
+                    <td>Backstage passes to a gig</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>2500</td>
+                    <td>Sunday lunch with the band</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="cntrRight">
+                <p><strong>What is this?</strong><br />
+                  These are incentives for your fans to promote you. Try to think of prizes that don’t cost too much but mean a lot to fans. ‘Get Closer to the Band’ experiences are perfect!</p>
+              </div>
+            </div>
+          </div>
+          <div class="formBox socialMedia">
+            <h3>Social Media Links</h3>
+            <ul>
+              <li>
+                <label>Twitter Account</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+                <img class="fLeft" src="images/twitter-ic.png" alt="" /> </li>
+              <li>
+                <label>Facebook</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+                <img class="fLeft" src="images/facebook-ic.png" alt="" /> </li>
+              <li>
+                <label>Google+</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+                <img class="fLeft" src="images/google-ic.png" alt="" /> </li>
+              <li>
+                <label>YouTube Channel</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+                <img class="fLeft" src="images/youtube.png" alt="" /> </li>
+              <li>
+                <label>Soundcloud</label>
+                <div class="text412">
+                  <input type="text" />
+                </div>
+                <img class="fLeft" src="images/weather.png" alt="" /> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="artistAside">
+          <div class="artisDiscover">
+            <h3 class="artistTop">Discover</h3>
+            <div class="artistBottom">
+              <p>Our fans want to discover the hottest new music first. By getting on Crowdbass you can:</p>
+              <ul>
+                <li><a href="#">Get heard by thousands of dedicated fans</a></li>
+                <li><a href="#">Get a rating to see how you are being received</a></li>
+                <li><a href="#">Read reviews of your music from objective fans who want you to succeed</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="artisSupport">
+            <h3 class="artistTop"> Support </h3>
+            <div class="artistBottom">
+              <p>Fans invest money in artists they like.</p>
+              <ul>
+                <li><a href="#">Raise risk-free capital to promote your album</a></li>
+                <li><a href="#">Share your successes with your fans</a></li>
+                <li><a href="#">No need to go to the bank manager</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="artisPromote">
+            <h3 class="artistTop"> Promote </h3>
+            <div class="artistBottom">
+              <p>Fans are incentivised to promote you to receive special rewards. This gives you a chance to get closer to your superfans!</p>
+              <ul>
+                <li><a href="#">Invite your top fans backstage</a></li>
+                <li><a href="#">Get closer to your fans than ever before</a></li>
+                <li><a href="#">Have your album promoted by potentially thousands of fans, all incentivised to make you a success</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix termsWrap">
+        <div class="formBox ">
+          <h3>Legal Stuff</h3>
+          <div class="termsLeft">
+            <label>Terms &amp; Conditions</label>
+          </div>
+          <div class="termsRight">
+            <div class="termBox">
+              <div class="scroll-pane">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                <ol>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+                  <li>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                </ol>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <input type="checkbox"  name="terms1"   class="styled"/>
+                <p>I agree to the Crowdbass Terms and Conditions as above.</p>
+              </li>
+              <li>
+                <input type="checkbox"  name="terms2" checked="checked"  class="styled"/>
+                <p>I want to hear about new music and products from Crowdbass and our partners</p>
+              </li>
+              <li>
+                <input type="checkbox"  name="terms3" checked="checked"  class="styled"/>
+                <p>I understand the <a href="#">Privacy Policy</a> and I'm fine with how you handle cookies</p>
+              </li>
+            </ul>
+            <button class="applyButton" ><span><span>Apply for Crowdbass Funding</span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" class="clearfix">
+    <div class="footerWrap container_12"> <a href="#" ><img src="images/back-to-top.png" alt="Back to Top" class="backToTop" title="Back to Top"  /></a>
+      <div class="footerLinks container_12">
+        <div class="whyItWork">
+          <ul>
+            <li><a href="#" title="Why It Works">Why It Works</a></li>
+            <li><a href="#" title="How It Works">How It Works</a>
+              <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Promote</a></li>
+                <li><a href="#">Become a Success</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="aboutCrow">
+          <ul>
+            <li><a href="#" title="About Crowdbass">About Crowdbass</a>
+              <ul>
+                <li><a href="#">How we pick our artists</a></li>
+                <li><a href="#">Our Managers</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Team: Crowdbass</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="faq">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms &amp; Condition</a></li>
+            <li><a href="#">Privacy Statement</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="twitterWrap"> <img src="images/crowdbass-logo.png" alt="" /> <span>Follow us on Twitter</span>
+          <div class="twitter"><img src="images/twiiter-icon.png" alt="" class="twitterIco" />
+            <p>&quot;Have you got what it takes to become a music mogul?&quot;<br />
+              <a href="#" class="link">#crowdbass</a></p>
+            <p><a href="#">More Tweets</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight clearfix">
+        <p>Copyright &copy; 2012 Crowdbass. All rights reserved.</p>
+        <p class="cookie">Cookie Use: Thiis site uses cookies yo make your browsing experience more enjoyable and help us develop a better site. Rest assured, we are very safe with your personal data.<br />
+          You can change your cookie settings any time. You are in control.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- For Custome Field plugin -->
+<script type="text/javascript" src="js/form-element.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+<!-- the jScrollPanel plugin -->
+<!-- the mousewheel plugin -->
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<!-- End jScrollPanel plugin -->
+<script type="text/javascript" src="js/jquery.inlineEdit.js"></script>
+<script type="text/javascript" src="js/jquery.numeric.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+		$("#header").hover(function() {
+			 $("#mainNav").slideDown(400);
+			 //alert("call");
+		}, function() {
+			 $("#mainNav").slideUp(400);
+		});
+		
+		$('.scroll-pane').jScrollPane();
+		});
+
+$.fn.fileName = function() {
+	var $this = $(this),
+	$val = $this.val(),
+	valArray = $val.split('\\'),
+	newVal = valArray[valArray.length-1],
+	$button = $this.siblings('.button');
+	if(newVal !== '') {
+		$button.text(newVal);
+  	}
+};
+
+$(function(){
+		   
+		   $('input[type=file]').bind('change focus click', function() {$(this).fileName()});
+		   
+			$( "#datepicker" ).datepicker({
+				showOn: "button",
+				buttonImage: "images/calender.png",
+				buttonImageOnly: true
+			});
+
+			});
+
+ $(".click").editable("http://www.appelsiini.net/projects/jeditable/php/echo.php", { 
+      indicator : "<img src='img/indicator.gif'>",
+      tooltip   : "Click to edit...",
+      style  : "inherit"
+  });
+		$(".closeBtn").click(function() {
+		 
+				  $('.welcomeBox').fadeOut('slow', function() {
+  					//  alert('Animation complete.');
+ 					 });
+		});
+	// $('.editable').inlineEdit();
+	// $(".numeric").numeric();
+ 
+	 //	$(".numClick").click(function() {
+//			$(this).find('input').addClass("numeric");
+//			//alert("call")
+//		});
+</script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+</body>
+</html>

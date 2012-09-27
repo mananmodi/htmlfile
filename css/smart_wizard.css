@@ -1,0 +1,357 @@
+/*   
+  SmartWizard 2.0 plugin 
+  jQuery Wizard control Plugin
+  by Dipu
+  
+  http://www.techlaboratory.net
+  http://tech-laboratory.blogspot.com
+*/
+.swMain {
+  position:relative;
+  display:block;
+  margin:0;
+  padding:0;
+  border: 0px solid #CCC;
+  overflow:visible;
+  float:left;
+  width:960px;
+  margin-top:20px;
+}
+.swMain .stepContainer {
+  display:block;
+  position: relative;
+  margin: 0;
+  padding:0;    
+  border: 0px solid #CCC;    
+ /* overflow:hidden;*/
+  clear:both;
+  height:300px;
+  width:840px;
+  margin:0 auto;
+  z-index:2;
+}
+
+.swMain .stepContainer div.content {
+  display:block;
+  position: absolute;  
+  float:left;
+  margin: 0;
+  min-height:242px;
+  height:242px;
+  padding:20px; 
+ /* padding:5px;    
+  
+  border: 1px solid #CCC; 
+  font: normal 12px Verdana, Arial, Helvetica, sans-serif; 
+  color:#5A5655;   
+  background-color:#F8F8F8;  
+  height:300px;
+  
+    -webkit-border-radius: 5px;
+  -moz-border-radius  : 5px; 
+   text-align:left;
+  overflow:visible;    
+  z-index:88; 
+
+  width:968px;
+  */
+  
+  
+
+  clear:both;
+}
+
+.swMain div.actionBar {
+  display:block;
+  float:right;
+  clear:both;
+  margin:10px 35px 0 0;   
+   
+  padding:0;    
+ 
+ /* height:40px;*/
+  text-align:left;
+ /* overflow:auto;   
+  position: relative;  
+  z-index:88; *
+
+ 
+  left:0;
+}
+
+.swMain .stepContainer .StepTitle {
+  display:block;
+  position: relative;
+  margin:0;   
+  border:1px solid #E0E0E0;
+  padding:5px;   
+  font: bold 16px Verdana, Arial, Helvetica, sans-serif; 
+  color:#5A5655;   
+  background-color:#E0E0E0;
+  clear:both;
+  text-align:left; 
+  z-index:88;
+  -webkit-border-radius: 5px;
+  -moz-border-radius  : 5px;    
+}
+.swMain ul.anchor {
+  position: relative;
+  display:block;
+  float:left;
+  list-style: none;
+  padding: 0px;  
+  margin: 10px 0;      
+  clear: both;
+  border: 0px solid #CCCCCC;    
+  background: transparent; /*#EEEEEE */
+  
+}
+.swMain ul.anchor li{ 
+  position: relative; 
+  display:block;
+  margin: 0;
+  padding: 0; 
+  border: 0px solid #E0E0E0;      
+  float: left;
+}
+/* Anchor Element Style */
+.swMain ul.anchor li a {
+  display:block;
+  position:relative;
+  float:left;
+  margin:0;
+   /* padding:3px;
+height:60px;
+  width:230px;*/
+  text-decoration: none;
+  outline-style:none;
+ /* -moz-border-radius  : 5px;
+  -webkit-border-radius: 5px;*/
+  z-index:99;
+}
+.swMain ul.anchor li a .stepNumber{
+  position:relative;
+  float:left;
+   
+  text-align: center;
+ 
+  
+}
+.swMain ul.anchor li a .stepDesc{
+  position:relative;
+  display:block;
+  padding-top:60px;
+  color:#555555;
+  font-size:14px;
+  text-align:center;
+  
+ /*  float:left;
+ 
+  padding:5px;
+text-align: left;
+  font: bold 20px Verdana, Arial, Helvetica, sans-serif;*/
+}
+.swMain ul.anchor li a .stepDesc small{
+  font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+}
+.swMain ul.anchor li a.selected{
+ /* color:#F8F8F8;
+  background: #EA8511; */ /* EA8511 */
+ /* border: 1px solid #EA8511;
+  cursor:text;
+  -moz-box-shadow: 5px 5px 8px #888;
+  -webkit-box-shadow: 5px 5px 8px #888;
+  box-shadow: 5px 5px 8px #888;*/
+   cursor:text;
+}
+.swMain ul.anchor li a.selected:hover {
+  /*color:#F8F8F8;  
+  background: #EA8511; */ 
+}
+
+.swMain ul.anchor li a.done { 
+  position:relative;
+ /* color:#FFF;  
+  background: #8CC63F;  
+  border: 1px solid #8CC63F;   */
+  z-index:99;
+}
+.swMain ul.anchor li a.done:hover {
+ /* color:#5A5655;  
+  background: #8CC63F; 
+  border: 1px solid #5A5655;   */
+}
+.swMain ul.anchor li a.disabled {
+ /* color:#CCCCCC;  
+  background: #F8F8F8;
+  border: 1px solid #CCC;*/  
+  cursor:text;   
+}
+.swMain ul.anchor li a.disabled:hover {
+  /*color:#CCCCCC;  
+  background: #F8F8F8; */    
+}
+
+.swMain ul.anchor li a.error {
+ /* color:#6c6c6c !important;  
+  background: #f08f75 !important;
+  border: 1px solid #fb3500 !important;      */
+}
+.swMain ul.anchor li a.error:hover {
+  color:#000 !important;       
+}
+
+.swMain .buttonNext {
+  display:block;
+  float:right;
+  margin:5px 3px 0 3px;
+ 
+  text-decoration: none;
+  text-align: center;
+  
+ 
+  color:#FFF;
+  outline-style:none;
+  
+}
+ 
+.swMain .buttonNext{width:85px; height:25px; float:right; margin:5px 5px 0 0; background:url(../images/next-btn.png) right top no-repeat; cursor:pointer; padding:8px 10px 0 5px;  font-weight:bold;}
+
+.swMain .buttonDisabled {
+  color:#F8F8F8  !important;
+  background-color: #CCCCCC !important;
+  border: 1px solid #CCCCCC  !important;
+  cursor:text;   
+  padding-left:5px !important;
+  background-image:none !important; 
+}
+.swMain .buttonPrevious {
+
+  display:block;
+  float:right;
+ 
+ font-size:14px;
+  text-decoration: none;
+  text-align: center;
+ 
+  color:#FFF;
+  outline-style:none;
+height:28px; float:right; margin:5px 5px 0 0; background:url(../images/prev-btn.png) right top no-repeat; cursor:pointer; padding:5px 5px 0 20px; width:75px;
+ font-weight:bold;
+}
+.swMain .buttonFinish {
+  display:none !important;
+  float:right;
+  
+  /*
+  margin:5px 10px 0 3px;
+  padding:5px;
+  text-decoration: none;
+  text-align: center;
+  font: bold 13px Verdana, Arial, Helvetica, sans-serif;
+  width:100px;
+  color:#FFF;
+    background-color:   #5A5655;
+  border: 1px solid #5A5655;
+  -moz-border-radius  : 5px; 
+  -webkit-border-radius: 5px;   */
+  outline-style:none;
+
+  
+  width:75px; height:22px; clear:both; margin:5px 0 0; color:#fff; font:14px 'ProximaNovaRgBold', Arial; 
+  padding:8px 5px 0 20px; text-align:left;  border:none; outline:none; cursor:pointer;
+   text-align:center;
+}
+
+/* Form Styles */
+
+.txtBox {
+  border:1px solid #CCCCCC;
+  color:#5A5655;
+  font:13px Verdana,Arial,Helvetica,sans-serif;
+  padding:2px;
+  width:430px;
+}
+.txtBox:focus {
+  border:1px solid #EA8511;
+}
+
+.swMain .loader {
+  position:relative;  
+  display:none;
+  float:left;  
+  margin: 2px 0 0 2px;
+  padding:8px 10px 8px 40px;
+  border: 1px solid #FFD700; 
+  font: bold 13px Verdana, Arial, Helvetica, sans-serif; 
+  color:#5A5655;       
+  background: #FFF url(../images/loader.gif) no-repeat 5px;  
+  -moz-border-radius  : 5px;
+  -webkit-border-radius: 5px;
+  z-index:998;
+}
+.swMain .msgBox {
+ display:none !important;
+  position:relative;  
+  display:none;
+  float:left;
+  margin: 4px 0 0 5px;
+  padding:5px;
+  border: 1px solid #FFD700; 
+  background-color: #FFFFDD;  
+  font: normal 12px Verdana, Arial, Helvetica, sans-serif; 
+  color:#5A5655;         
+  -moz-border-radius  : 5px;
+  -webkit-border-radius: 5px;
+  z-index:999;
+  min-width:200px;  
+}
+.swMain .msgBox .content {
+  font: normal 12px Verdana,Arial,Helvetica,sans-serif;
+  padding: 0px;
+  float:left;
+}
+.swMain .msgBox .close {
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  color: #CCC;
+  display: block;
+  float: right;
+  margin: 0 0 0 5px;
+  outline-style: none;
+  padding: 0 2px 0 2px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.swMain .msgBox .close:hover{
+  color: #EA8511;
+  border: 1px solid #EA8511;  
+}
+
+.swMain ul.anchor{	width:831px;
+    height:105px;
+	background:url(../images/slide-btn-bg.gif) left top repeat-x;
+	display:block !important;
+	margin:0 auto 0 84px;
+	position:relative;
+	z-index:0;
+	}
+	
+	
+	
+.swMain ul.anchor li{
+	float:left;
+    position:relative;
+	margin:0 40px;
+}
+.swMain ul.anchor li a.selected, .swMain ul.anchor li a.done{background:url(../images/slide-btn-active.gif) center top no-repeat; color:#fff;}
+.swMain ul.anchor li a{  float:left; background:url(../images/slide-btn-normal.gif) center top no-repeat; cursor:pointer;  padding:8px 0 0;  float:left; width:125px;}
+.swMain ul.anchor li label.stepNumber{ width:125px;   color:#999999; font:40px 'ProximaNovaRgBold', Arial; text-align:center; }
+.swMain ul.anchor li a.selected label.stepNumber, .swMain ul.anchor li a.done label.stepNumber  {   color:#fff; font:40px 'ProximaNovaRgBold',Arial; }
+.swMain ul.anchor li a.selected span.stepDesc{ color:#555555; font-size:14px; text-align:center;}
+
+#navigation ul li .spacebg{float:left; display:block; padding:0 11px; background:#fff;}
+#navigation ul li .spacebg .btn{ width:63px; height:55px; float:left; background:url(../images/slide-btn-normal.gif) left top no-repeat; cursor:pointer; color:#999999; font:40px 'ProximaNovaRgBold', Arial; text-align:center; padding:8px 0 0;}
+#navigation ul li.selected .spacebg .btn{background:url(../images/slide-btn-active.gif) left top no-repeat; color:#fff; text-shadow:2px 1px 1px #bd491f;}
+#navigation ul li .title{clear:both; display:block; padding-top:2px; text-align:center; color:#555; font-size:14px;}

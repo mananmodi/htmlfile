@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/passwordstrength.css"/>
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+</head>
+<body>
+<div id="container" >
+  <div id="header">
+    <div class="container_12">
+      <h1 class="grid_4 alpha"><a href="index.html"><img src="images/crowdbass.png" alt="crowdbass" title="crowdbass" /></a></h1>
+      <div class="headerRight">
+        <div class="createMyLabel">
+          <div class="signIn"><a href="#">Sign in</a> <span>or</span></div>
+          <a href="#" class="arrowButton26"><span><span>Create my label now</span></span></a> </div>
+        <div class="artistLooking">Are you an artist looking to raise funding? <a href="#">Click here</a></div>
+      </div>
+    </div>
+    <div id="mainNav">
+      <div class="container_12">
+        <ul>
+          <li><a href="#">Find Arttists</a></li>
+          <li><a href="#">Our Managers</a></li>
+          <li><a href="#">Charts</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Get in Touch</a></li>
+        </ul>
+        <span id="socialNetwork"> <a href="#"><img src="images/facebook-icon.gif" alt="Facebook" /></a> <a href="#"><img src="images/twitter-icon.gif" alt="Twitter" /></a> </span> </div>
+    </div>
+  </div>
+  <div class="clearfix loginWrap" >
+    <div class="loginBox">
+      <div class="loginBoxHeading">Login</div>
+      <div id="usual2" class="usual">
+        <ul class="usualUl">
+          <li><a href="#tabs1">Login</a></li>
+          <li class="secondTab"><a href="#tabs2">Register</a></li>
+        </ul>
+        <div id="tabs1">
+            <form action="" method="post" id="login-form" novalidate="novalidate">
+          <ul class="loginInfo">
+            <li>
+              <div class="errorMessage noDisplay">
+                <p>Sorry that name/ password combination isn’t correct.<span>TRY AGAIN.</span></p>
+              </div>
+            </li>
+            <li>
+              <label for="emaillabel">Email or Label Name:</label>
+              <div class="loginInput">
+                <input  type="text" name="emaillabel" />
+              </div>
+            </li>
+            <li>
+              <label for="password">Password:</label>
+              <div class="loginInput">
+                <input  class="password1" type="password" name="password" />
+              </div>
+            </li>
+            <li>
+              <div class="loginButtons">
+                <input  type="submit" value="Login" class="login" />
+                <div class="forgotPassword">I’ve <a href="javascript:;" class="forgotten">forgotten my password!</a> </div>
+              </div>
+            </li>
+          </ul>
+          </form>
+          <ul class="forgotPasswordWrap">
+            <li>
+              <div class="forgotWrap">
+                <p>Forgotten your password? No problem. It happens. Just enter your Email address below or we’ll reset it for you. </p>
+              </div>
+            </li>
+            
+            <li class="forRegister">
+            	  <form action="" method="post" id="forgot-form" novalidate="novalidate">
+              <label>Registered Email address:</label>
+              <div class="frgotPassword">
+                <input type="text" value="" name="forgotpassword" />
+              </div>
+              <input type="submit" value="Reset Password" class="resetPassword"  />
+                 </form>
+            </li>
+          </ul>
+        </div>
+        <div id="tabs2">
+          <div class="register">
+            <p>Are you an artist looking for funding? <a href="#">Apply HERE!</a></p>
+            <h2>Register for your record label now!</h2>
+            <form action="" method="post" id="register-form" novalidate="novalidate">
+            <ul class="loginInfo">
+              <li>
+                <label for="email">Email Address:</label>
+                <div class="loginInput">
+                  <input  type="text"  name="email" />
+                </div>
+              </li>
+              <li>
+                <label for="password">Password:</label>
+                <div class="loginInput">
+                  <input  type="password" class="password"  id="password" name="password" />
+                   
+                </div>
+              </li>
+              <li class="verifyPassword">
+                <label for="verifypassword">Verify Password:</label>
+                <div class="loginInput">
+                   <input  type="password" name="verifypassword"   />
+                </div>
+                <div class="passwordWrap noDisplay">
+                  <div class="passwordDoNot"> Passwords do not match. </div>
+                </div>
+                <div class="passwordWrap noDisplay">
+                  <div class="emailAlready"> That Emal address is already
+                    registered to Crowdbass. Have
+                    you <a href="#">forgotten your password?</a> </div>
+                </div>
+              </li>
+			  <li class="showpasswordmeter">
+			  </li>
+			  
+              <li>               
+                 
+                <input type="submit" value="Register" class="registerBtn" />
+              </li>
+            </ul>
+            </form>
+            
+          </div>
+          <div id="thankYouForReg" style="display:none;">
+            	<p>Thank you for registering for Crowdbass!</p>
+<p>We've set you a verification Email. Please click on the link and complete a few details to finalise your registration.</p> 
+<a href="#">Resend validation Email</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix loginLogo">
+      <div class="musicOnline"> <a href="#"><img src="images/music-online.png" alt="" /></a> </div>
+      <div class="crodbassLogo"> <a href="#"><img src="images/crowdbass-logo-img.png" alt="" /></a> </div>
+    </div>
+  </div>
+  <div id="footer" class="clearfix">
+    <div class="footerWrap container_12"> <a href="#" ><img src="images/back-to-top-login.png" alt="Back to Top" class="backToTop" title="Back to Top"  /></a>
+      <div class="footerLinks container_12">
+        <div class="whyItWork">
+          <ul>
+            <li><a href="#" title="Why It Works">Why It Works</a></li>
+            <li><a href="#" title="How It Works">How It Works</a>
+              <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Promote</a></li>
+                <li><a href="#">Become a Success</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="aboutCrow">
+          <ul>
+            <li><a href="#" title="About Crowdbass">About Crowdbass</a>
+              <ul>
+                <li><a href="#">How we pick our artists</a></li>
+                <li><a href="#">Our Managers</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Team: Crowdbass</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="faq">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="f003-terms-and-conditions.html">Terms & Condition</a></li>
+            <li><a href="f004-privacy-policy.html">Privacy Statement</a></li>
+            <li><a href="f005-contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="twitterWrap"> <img src="images/crowdbass-logo.png" alt="" /> <span>Follow us on Twitter</span>
+          <div class="twitter"><img src="images/twiiter-icon.png" alt="" class="twitterIco" />
+            <p>&quot;Have you got what it takes to become a music mogul?&quot;<br />
+              <a href="#" class="link">#crowdbass</a></p>
+            <p><a href="3">More Tweets</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight clearfix">
+        <p>Copyright &copy; 2012 Crowdbass. All rights reserved.</p>
+        <p class="cookie">Cookie Use: Thiis site uses cookies yo make your browsing experience more enjoyable and help us develop a better site. Rest assured, we are very safe with your personal data.<br />
+          You can change your cookie settings any time. You are in control.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/form-element.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+		$("#header").hover(function() {
+			 $("#mainNav").slideDown(400);
+			 //alert("call");
+		}, function() {
+			 $("#mainNav").slideUp(400);
+		});
+		});
+		
+		
+		$(".forgotten").click(function() {
+		if ($(".forgotPasswordWrap").is(":hidden")) {
+			$(".forgotPasswordWrap").slideDown("slow");
+			} else {
+			$(".forgotPasswordWrap").slideUp("slow");
+			}
+		});
+		
+  $("#usual2 ul").idTabs("tabs1"); 
+  
+  
+  
+</script>
+
+<script type="text/javascript" src="js/passwordstrength.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+/**
+  * Basic jQuery Validation Form Demo Code
+  * Copyright Sam Deering 2012
+  * Licence: http://www.jquery4u.com/license/
+  */
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            //form validation rules
+            $("#register-form").validate({
+                rules: {
+                  //  verifypassword: "required verifypassword",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+    			  verifypassword: {
+				  		 //required: true,
+     					  equalTo: "#password"
+  				   },
+                    agree: "required"
+                },
+                messages: {
+                    verifypassword: "Password and Verify Password must match",
+                     password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long"
+                    },
+                    email: "Please enter a valid email address"
+                  
+                },
+                submitHandler: function(form) {
+			 if ($("#thankYouForReg").is(":hidden")) {
+				   $('#thankYouForReg').show();
+				   var headerheight = $("#header").height();
+				   $('html,body').animate({scrollTop: $("#thankYouForReg").offset().top - headerheight},'slow');
+				 
+  		    } else {
+      
+		      }
+                    //form.submit();
+                }
+            });
+			
+			  $("#login-form").validate({
+                rules: {
+                 
+            		 emaillabel: {
+                        required: true,
+                        minlength: 5
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    }
+                     
+                },
+                messages: {
+				  emaillabel: {
+                        required: "Please enter a valid email address / Label Name",
+                        minlength: "Your email address / Label Name must be at least 5 characters long"
+                    } ,
+          
+                     password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long"
+                    } 
+                   
+                  
+                },
+				
+                submitHandler: function(form) {
+					 
+                     form.submit();
+                }
+            });
+			
+			
+			 $("#forgot-form").validate({
+                rules: {
+                 
+            	  forgotpassword: {
+                        required: true,
+                        email: true
+                    }
+                     
+                },
+                messages: {
+				  forgotpassword: {
+                        required: "Please enter a valid email address"
+                        //minlength: "Your email address / Label Name must be at least 5 characters long"
+                    } 
+          
+                    
+                  
+                },
+				
+                submitHandler: function(form) {
+					 
+					 
+                     form.submit();
+                }
+            });
+			
+			
+			
+			
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);
+</script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+</body>
+</html>

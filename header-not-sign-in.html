@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Header User Not Sign in</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <div class="container_12">
+      <h1 class="grid_4 alpha"><a href="index.html"><img src="images/crowdbass.png" alt="crowdbass" title="crowdbass" /></a></h1>
+      <div class="headerRight">
+      	<div class="createMyLabel">
+     	   <div class="signIn"><a href="#">Sign in</a> <span>or</span></div>
+    	    <a href="#" class="arrowButton26"><span><span>Create my label now</span></span></a>
+        </div>
+        <div class="artistLooking">Are you an artist looking to raise funding? <a href="#">Click here</a></div>
+      </div>
+ 
+    </div>
+    <div id="mainNav" class="noDisplay">
+    	<div class="container_12">
+    	<ul>
+        	<li><a href="#">Find Arttists</a></li>
+            <li><a href="#">Our Managers</a></li>
+            
+            <li><a href="#">Charts</a></li>
+            
+            <li><a href="#">News</a></li>
+            <li><a href="#">Get in Touch</a></li>
+        </ul>
+        <span id="socialNetwork">	
+        	<a href="#"><img src="images/facebook-icon.gif" alt="Facebook" /></a>
+            <a href="#"><img src="images/twitter-icon.gif" alt="Twitter" /></a>
+        </span>
+        </div>
+    </div>
+  </div>
+  <div class="clearfix innerContentWrap">
+    <div class="innerWhite">
+    	<div class="container_12">
+      <div class="dynamoWrap container_12">
+        <h3>Dynamo Records</h3>
+        <img src="images/start-reviewing.gif" class="noDisplay" alt="" /> <a href="#" class="arrowBlueButton42"><span><span>3 new artists awaiting your review</span></span></a> </div>
+       
+  
+     
+     
+    </div>
+      </div>
+     
+  </div>
+   
+</div>
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+
+ <script type="text/javascript"> 
+$(document).ready(function() {
+		$("#header").hover(function() {
+			 $("#mainNav").slideDown(400);
+			 //alert("call");
+		}, function() {
+			 $("#mainNav").slideUp(400);
+		});
+		});
+
+</script>
+
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+#slidingForm{width:836px; float:left; /* overflow:hidden; */ background:#fff; border:1px solid #e8e8e8; border-radius:6px; -moz-border-radius:6px;  -webkit-border-radius:6px;	box-shadow:1px 1px 1px #CFD0D0; -moz-box-shadow:1px 1px 1px #CFD0D0; -webkit-box-shadow:1px 1px 1px #CFD0D0; behavior:url(PIE.htc); position:relative; margin:32px 0;}
+#steps{
+    width:3372px !important;
+   /* overflow:hidden;*/
+}
+.step{
+    width:836px;
+	min-height:252px;
+    float:left;
+	margin-right:2px;	
+}
+
+.formDetails{width:786px; padding:20px 0 0 24px !important;}
+#navigation{
+	width:831px;
+    height:64px;
+	background:url(../images/slide-btn-bg.gif) left top repeat-x;
+	display:block !important;
+}
+#navigation ul{
+    list-style:none;
+	float:left;
+	margin-left:22px;
+}
+#navigation ul li{
+	float:left;
+    position:relative;
+	margin:0 93px 0 30px;
+}
+#navigation ul li.last{margin:0 5px;}
+#navigation ul li .spacebg{float:left; display:block; padding:0 11px; background:#fff;}
+#navigation ul li .spacebg .btn{width:63px; height:55px; float:left; background:url(../images/slide-btn-normal.gif) left top no-repeat; cursor:pointer; color:#999999; font:40px 'ProximaNovaRgBold', Arial; text-align:center; padding:8px 0 0;}
+#navigation ul li.selected .spacebg .btn{background:url(../images/slide-btn-active.gif) left top no-repeat; color:#fff; text-shadow:2px 1px 1px #bd491f;}
+#navigation ul li .title{clear:both; display:block; padding-top:2px; text-align:center; color:#555; font-size:14px;}
+span.checked{
+    background:transparent url(../images/checked.png) no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+span.error{
+    background:transparent url(../images/error.png) no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+.row{width:786px; float:left; padding-bottom:16px;}
+.ie7 .row .col{margin-bottom:-24px; position:relative;}
+.row.last{padding-bottom:24px;}
+.row .col{width:379px; float:left;}
+.padBot14{padding-bottom:14px; overflow:hidden;}

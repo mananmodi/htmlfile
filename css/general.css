@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'ProximaNovaRgBold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#ProximaNovaRgBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaRgRegular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#ProximaNovaRgRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximanovaSemibold';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#ProximanovaSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_thbold';
+    src: url('../fonts/proximanova-extrabold-webfont.eot');
+    src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-extrabold-webfont.svg#proxima_nova_thbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_nova_blregular';
+    src: url('../fonts/proximanova-black-webfont.eot');
+    src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-black-webfont.woff') format('woff'),
+         url('../fonts/proximanova-black-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-black-webfont.svg#proxima_nova_blregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_ltregular';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+	
+	/********** misc ***********/
+a   {color:#f6642f; text-decoration:none; font-weight:normal; }
+a:hover  { text-decoration:none; }
+.fLeft  { float:left !important; }
+.fRight { float:right !important; }
+.fNone       { float:none !important; }
+.noDisplay   { display:none !important; }
+.noMargin    { margin:0 !important; }
+.noPadding   { padding:0 !important; }
+.noBg        { background:none !important; }
+.clearfix:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0;}
+.clearfix {display: block;}
+li{ list-style:none;}
+strong{ font-weight:bold;}
+em{ font-style:italic;}	
+html, body{ width:100%; height:100%;}
+/********** common classes ***********/
+h2{ font-size:38px; color:#343434; padding-bottom:29px; /*border-bottom:#cfcfcf solid 1px;*/ line-height:39px; font-family: 'ProximaNovaRgBold', Arial; text-transform:uppercase; letter-spacing:-1px; }
+h2 span{ color:#f15a24;}
+h3{ color:#242424; font-size:46px; padding-bottom:16px; line-height:46px; font-family: 'ProximaNovaRgBold', Arial;}
+h4{ font-size:46px; line-height:46px; color:#242424; font-family: 'ProximaNovaRgBold', Arial; }
+p{ font-size:14px; padding-bottom:19px; color:#434343; }
+button{ background-image:none; border:none; padding:0; cursor:pointer; overflow:visible; background-image:none; background-color:transparent;}
+textarea, select{ font-family: 'ProximaNovaRgRegular', Arial; font-size:15px; background:transparent; border:none; }
+input{  border:none;  margin:0; font-family: 'ProximaNovaRgRegular', Arial; font-size:15px;}
+
+input[type="text"] {background:transparent; }
+
+input:focus, textarea:focus{ border:none; outline:none;}
+input[type="button"] { cursor:pointer; }
+
+label{ font-size:15px; color:#434343;}
+label span{ color:#f25d28; font-weight:bold;}
+/********** buttons ***********/
+
+	.arrowButton26{ display:block; height:26px; line-height:26px; font-size:16px; float:right; width:211px;}
+ 	.arrowButton26 span{background: url(../images/button-left.png) left top no-repeat; display:block;}
+	.arrowButton26 span span{background: url(../images/button-right.png) right top no-repeat; color:#fff; padding-left:12px; ; font-family: 'ProximaNovaRgBold', Arial;}
+
+	 .arrowButton42{ display:block; height:42px; line-height:42px; font-size:22px; float:right; width:304px;}
+	 .arrowButton42 span{background: url(../images/button42-left.png) left top no-repeat; display:block;}
+	 .arrowButton42 span span{background: url(../images/button42-right.png) right top no-repeat; color:#fff; padding-left:12px;}
+
+	 .arrowBlueButton42{ display:block; height:42px; line-height:42px; font-size:18px; float:right; /* width:345px;*/}
+	 .arrowBlueButton42 span{background: url(../images/button-blue42-left.png) left top no-repeat; display:block;}
+	 .arrowBlueButton42 span span{background: url(../images/button-blue42-right.png) right top no-repeat; color:#fff; font-family: 'ProximanovaSemibold'; padding:0 73px 0 12px;}
+
+	.arrowButton37{ display:block; height:37px; line-height:37px; font-size:16px; float:left; min-width:244px; border:none !important; border-style:none !important;  }
+ 
+ 	.arrowButton37 span{background: url(../images/button37-left.png) left top no-repeat; display:block;}
+	.arrowButton37 span span{background: url(../images/button37-right.png) right top no-repeat; color:#fff;    font-family: 'ProximaNovaRgBold', Arial; padding:0 54px 0 10px;}
+	
+ 
+ 
+	
+ 
+  	 .applyButton{ display:block; height:42px; line-height:42px; font-size:22px; float:right;}
+	 .applyButton span{background: url(../images/button42-left.png) left top no-repeat; display:block;}
+	 .applyButton span span{background: url(../images/button42-right.png) right top no-repeat; color:#fff; padding-right:72px;    font-family: 'ProximaNovaRgBold', Arial; padding-left:10px;}
+
+
+
+
+body{ font:16px/18px  'ProximaNovaRgRegular', Arial, Georgia, serif; color:#3a3a3a; /* background:url(../images/background.jpg) center 74px no-repeat;*/}
+ 
+/********** misc ***********/
+	#header{background-color:#191919; border-bottom:#f15a24 solid 4px; width:100%;  position:fixed; left:0; top:0; z-index:2; }
+	#header .container_12{ min-height:70px;}
+	#header h1 img{ margin-top:14px;}
+	.headerRight{ /*width:320px;*/ float:right; padding:7px 0 0;}
+	.signIn{ float:left; padding:5px 10px 0 23px; color:#929292; font-family:'ProximanovaSemibold', Arial;}
+	.ie7 .signIn{ padding-left:30px;}
+	.ie7 .headerRight{width:320px;}
+ 	.artistLooking{ clear:both; color:#fff; float: right; font-size:13px; padding:7px 0 0 11px; font-family:'ProximanovaSemibold', Arial; /*width:293px;*/}
+	.ie7 .artistLooking{ width:293px;}
+	.createMyLabel{ float:right;}
+ 	.countBefore{ float:left; font-size:15px; color:#fff;} 
+	.countBefore span{ font-size:15px;}
+	.countBefore a{ font-family: 'ProximanovaSemibold'; font-size:13px;}
+	.helpRight, .countBefore{ width:403px;}
+	.timeLine span{ color:#ebebeb; font-family: 'ProximanovaSemibold'; font-size:16px;}
+	.timeLine{ font-size:21px;   font-family: 'ProximaNovaRgBold'; color:#fff; padding:15px 0 0; clear:both; text-transform:uppercase;}
+   
+   .textBox{background: url(../images/textbox.png) left top no-repeat; width:234px; height:26px; padding:5px 5px 3px 5px; }
+   .textBox input{   line-height:20px; font-size:18px; border:none; width:234px;  }
+   
+    .textBoxBig{background: url(../images/textbox-big.png) left top no-repeat; width:402px; height:22px; padding:3px 5px 3px 5px; }
+   .textBoxBig input{   line-height:22px; height:22px; width:402px;  }
+   .ie8 .textBoxBig input{ background-color:#f5f5f5;}
+     
+    .textBoxMedium{background: url(../images/inputbox-med.png) left top no-repeat; width:161px; height:20px; padding:5px 5px 3px 5px;  margin:0;}
+   .textBoxMedium input{   line-height:20px;  border:none; width:161px;  }
+      .ie8 .textBoxMedium input{ background-color:#fff;}
+    .textBoxGray{background: url(../images/inputbox-gray.png) left top no-repeat; width:178px; height:20px; padding:3px 5px 3px 5px; }
+   .textBoxGray input{   line-height:20px;  border:none; width:178px;   }
+   .ie8 .textBoxGray input{ background-color:#f5f5f5;}
+  	.textBoxartistProfile{background: url(../images/artist-value.png) left top no-repeat; width:402px; height:212px; padding:3px 5px 7px 5px;}
+  .textBoxartistProfile textarea{  line-height:22px;  border:none; width:402px; height:212px; }
+  .ie8 textarea, .ie8 .dateBg input, .ie8 .songNameText input, .ie8 .text412 input{ background-color:#f5f5f5;}
+    .text412{background: url(../images/input-box412.png) left top no-repeat; width:402px; height:22px; padding:3px 5px 3px 5px; }
+   .text412 input{   line-height:20px; height:20px;  border:none; width:402px;   }
+  
+   
+   
+	 
+	   #footer{background: url(../images/footer.png) center top no-repeat; margin:-154px 0 0; min-height:484px; position:relative; padding:70px 0 0;}
+	   .footerWrap{ position:relative;}
+	   .backToTop{ position:absolute; left:20px; top:-47px;}
+	   .footerLinks{ float:left; padding-bottom:40px; border-bottom:#1d1a1a solid 1px;}
+	   .whyItWork{ float:left; padding:82px 5px 0 0; width:190px;}
+	 
+	   .aboutCrow{ float:left; width:203px; padding:84px 0 0 4px;}
+ 	   .faq{ float:left; width:187px; padding:84px 0 0 33px;}
+	  
+	   .footerLinks a{ color:#777777; font-size:14px; line-height:20px;}
+	   .footerLinks a:hover{ color:#f15a24; text-decoration:none;}
+	   .footerLinks ul li a{}
+	   .footerLinks li{ list-style:none; line-height:20px;}
+   		.footerLinks li ul{ padding-left:14px;}
+	
+	   
+	    .twitterWrap{ float:left; width:294px; padding:24px 0 0 9px }
+	    .twitterWrap img{ float:right; margin-left:14px;}
+	    .twitterWrap span{ display:block; float:left; clear:right; padding:29px 0 10px 77px;}
+		.twitter p{ line-height:16px; padding-bottom:0;}
+		.twitter{background: url(../images/twitter.png) center top no-repeat; float:left; position:relative; width:195px; height:88px; padding:12px 25px 0 74px; position:relative;}
+		.twitter .twitterIco{ position:absolute; left:0; top:-25px;}
+		.twitter a.link{ color:#f15a24; margin-bottom:8px; display:block;}
+		.copyRight{ padding:28px 0 0; float:left;}
+		.copyRight p{ color:#5b5b5b; padding-bottom:12px;}
+		.copyRight p.cookie{ font-size:11px; line-height:14px;}
+		
+	 		/*navigation pages header.html */
+ 		#mainNav{ background-color:#f15a24; height:25px; border-top:#180904 solid 1px; display:none; }
+		#header #mainNav .container_12{ min-height:25px;}
+		#mainNav ul{ float:left;}
+		#mainNav ul li{ float:left;  background: url(../images/navigation.png) left center no-repeat; padding:1px 44px 0 20px; line-height:24px;}
+		#mainNav ul li a{  font-family: 'ProximanovaSemibold'; font-size:14px; color:#fff;}
+		#socialNetwork{ float:right;}
+		#socialNetwork img{ float:left; margin:4px 0 0 3px;}
+		
+		/*Account Not verifid*/
+		.headerRightWrap{ width:563px; float:right; padding:10px 0 0;}
+  		
+		.topIconsWrap{background: url(../images/icons-wrap-let.png) left top no-repeat; display:block; padding:0 0 0 5px; float:left; height:30px; margin-top:10px; }
+		.topIcons{background: url(../images/icons-wrap-right.png) right top no-repeat; display:block; padding:6px 15px 0 6px; height:24px;}
+		.topIcons ul li{ float:left; padding:0 17px 0 0;}
+		.topIcons ul li.messages{ position:relative; padding-right:22px;}
+		 .topIcons ul li.messages div{ position:absolute; top:-10px; left:11px; background: url(../images/alert-left.png) left top no-repeat; display:block; padding:0 0 0 4px;}
+		 .topIcons ul li.messages div a{background: url(../images/alert-right.png) right top no-repeat; display:block; padding:0 8px 0 0; line-height:15px; height:17px; font-size:10px; color:#fff; font-weight:;}
+		 .topIcons li.last{ padding-right:0;}
+		 .accountNotVerified{background: url(../images/account-not-verified.png) left top no-repeat; display:block; width:288px; height:35px; padding:5px; float:right; color:#fff; text-align:center;}
+		 .accountNotVerified strong{ display:block;   font-size:18px; text-transform:uppercase; padding-bottom:4px;  }
+		 .accountNotVerified p{ font-size:11px;  }
+		 
+		 .userInboxRank{ float:right; width:250px;}
+ 		.userInboxRank .myIndex{ width:250px; float:left; padding-bottom:8px;}
+		 .userInboxRank .myIndex, .userInboxRank .myIndex label{ float:left; font-family: 'ProximaNovaRgBold'; color:#fff;  font-size:21px;  line-height:21px; }
+		 .userInboxRank .myIndex label{ padding-right:10px;}
+		.userInboxRank .myIndex span { float:left;}
+		.userInboxRank .myIndex span.lstGap{ padding-left:3px;  }
+		.userInboxRank .myIndex span.value{ padding:0 15px 0 18px;;}
+ 
+		.userInboxRank .myIndex img{ margin:3px 2px 0 4px;}
+		.userInboxRank .myIndex a{ clear:left; font-size:13px; color:#ffe3af; float:left; text-decoration:underline; margin:5px 0 0 1px; line-height:14px; width:140px; }
+	 
+		.userInboxRank .myRank, .userInboxRank .myRank label{font-size:16px;}
+	 	.userInboxRank .myRank  span.value{ padding-right:5px; }
+		
+		
+		/*Welcome Help*/
+
+	.welcomeBox{ background-color:#ffffcc; position:relative; border:#e9e3cb solid 1px; width:918px; /*min-height:140px;*/ padding:20px 18px; float:left; margin-bottom:20px; box-shadow:2px 2px 3px #e5e2e2; -webkit-box-shadow:2px 2px 3px #e5e2e2; -moz-box-shadow:2px 2px 3px #e5e2e2;  -webkit-border-radius:7px; -moz-border-radius:7px; border-radius:7px; behavior: url(PIE.htc);	}
+	.closeBtn{ position:absolute; right:7px; top:8px; cursor:pointer;}
+	
+	
+.checkbox{ width: 19px; height: 19px; padding: 0 10px 0 0; display: block; clear: left; float: left; background: url(../images/checkbox.png) 0 0 no-repeat; }
+
+ 
+ 
+ span.select {position: absolute; overflow: hidden;  background: url(../images/select.png) left top no-repeat; width:188px; height:32px; color:#242424; font-size:15px; padding:5px 29px 0 0; cursor:pointer; text-align:center;}
+select.styled{ width:217px; color:#242424; font-size:12px; margin-top:7px; cursor:pointer;}
+
+.radio {
+  width: 15px;
+  height: 16px;
+  padding: 0 5px 0 0;
+  display: block;
+  clear: left;
+  float: left;
+}
+.radio { background: url(../images/radio-checked.png) 0 0 no-repeat; }
+.ie fieldset{ padding-top:0;}
+.ie fieldset legend{ margin-top:-5px; margin-bottom:5px;}
+
+#pagination{ margin:0 auto;}
+#pagination .first a{ background: url(../images/first.png) left top no-repeat;}
+#pagination .first a:hover{background: url(../images/first.png) left top no-repeat; }
+#pagination li{border:0; margin:0; padding:0 4px 0 0; font-size:11px; list-style:none; display:inline-block;  width:21px; height:21px; float:left; }
+#pagination a{ display:inline-block; text-align:center;   background: url(../images/un-selected.png) left top no-repeat;  width:21px; height:21px; line-height:21px; font-weight:bold; color:#3a3a3a;}
+#pagination .next a, #pagination .next a:hover{background: url(../images/next.png) left top no-repeat;}
+#pagination .previous a, #pagination .previous a:hover { background: url(../images/previous.png) left top no-repeat; }
+#pagination .active{background: url(../images/selected.png) left top no-repeat; width:21px; height:21px; line-height:21px; color:#fff; font-weight:bold;}
+#pagination a:hover{background: url(../images/selected.png) left top no-repeat; color:#fff;}
+
+#pagination .last a{background: url(../images/last.png) left top no-repeat;}
+
+

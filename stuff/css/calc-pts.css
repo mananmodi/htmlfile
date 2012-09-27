@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*************************************************************************
+							 Global Styles
+*************************************************************************/
+hmtl{
+}
+
+ 
+
+.font-darkgray{
+	color:#333;
+}
+
+.cursor-hand{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.cursor-default{
+	cursor:default;
+}
+
+.hide-content{
+	display:none;
+}
+/*******************************************************************
+							Group: Container
+*******************************************************************/
+
+.clac-pts-group{
+	width:400px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/********************** Sub-Group: Header  *********************/
+
+.clac-pts-header{
+	
+	height:45px;
+	-moz-border-radius-topleft:10px;
+    -moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	border-style:solid;
+	border-color:#999999;
+	border-width:thin;
+	border-bottom:none;
+	background-image:url(../imgs/bkgd-header-tile.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:#d8d8d8;
+	text-align:center;
+	line-height:46px;
+}
+
+/********************** Sub-Group: Body  *********************/
+
+.clac-pts-body{
+	/*height: 350px;*/
+	 
+ 
+ 
+	
+}
+
+.border-white{
+	 
+	width:396px;
+ 
+}
+
+
+.clac-pts-body-shadow{
+	height:31px;
+	width:415px;
+	background-image:url(../imgs/shadow.png);
+	background-image:url(../imgs/shadow.png);
+	background-repeat:no-repeat;
+}
+
+
+/*******************************************************************
+							Group: Slider
+*******************************************************************/
+
+.slider-group{
+	height:85px;
+	width:230px;
+	float:left;
+	margin-top:20px;
+	margin-left:18px;
+	margin-bottom:12px;
+}
+
+/*************** Sub-group: Slider Title & Amount *****************/
+
+
+.slider-content-subgroup{
+	padding-bottom:6px;
+	font-size:14px
+}
+
+.slider-content-title{
+	width:150px;
+	float:left;
+}
+
+.slider-content-amount{
+	width:80px;
+	text-align:right;
+	float:left;
+	font-weight:bold;
+}
+
+/********************** Sub-Group: Slider Bar *********************/
+
+.slider-bar-subgroup{
+	height:36px;
+	width:230px;
+	position:relative;
+	padding-top:4px;
+	background-image:
+	url(../imgs/bkgd-slider-tile.png);
+	background-repeat:repeat-x;
+}
+
+
+.slider-bar-container{
+	width:220px;
+	height:28px;
+	background-color:#777676;
+	position:absolute;
+	left:5px;
+}
+
+.slider-bar-bar{
+	height:28px;
+	width:0px;
+	background-image:url(../imgs/bkgd-bar.png);
+	background-repeat:repeat-x;
+	
+}
+
+.slider-bar-btn{
+	width:40px;
+	height:56px;
+	position:absolute;
+	left:-15px;
+	background-image:url(../imgs/btn-slider.png);
+	background-repeat:no-repeat;
+}
+
+/*******************************************************************
+						Group: Points Total
+*******************************************************************/
+
+.pts-total-group{
+	width:80px;
+	margin-top:20px;
+	margin-left:14px;
+	float:left;
+	font-size: 14px;
+}
+.pts-total-title{
+	width:120px;
+	text-align:right;
+	padding-bottom:6px;
+}
+
+.pts-total-amount{
+	height:29px;
+	width:120px;
+	background-color:#d4d4d4;
+	border-bottom: 3px solid #8dc548;
+	text-align:center;
+	line-height:30px;
+	font-weight:bold;
+}
+
+/*******************************************************************
+						Group: Points Showcase
+*******************************************************************/
+
+.pts-content-group{
+	width:364px;
+	min-height:210px;
+	clear:both;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid #ccc;
+	overflow:hidden;
+	position:relative;
+}
+
+.pts-content-mask{
+	width:728px;
+	position:relative;
+}
+
+.pts-item{
+	width:334px;
+	min-height:140px;
+	padding:20px 15px;
+	position:absolute;
+	left:0px;
+}
+
+
+.pts-text{
+	width:170px;
+	 
+	line-height:18px;
+	color:#333;
+	float:left;
+	margin-right:8px;
+	font-size:14px;
+}
+
+.pts-text strong{ display:block; padding-bottom:5px; font-size:21px; color:#252525;}
+.pts-text-amount{
+	color:#060;
+	line-height:50px;
+	font-size:16px;
+	font-weight:bold;
+	overflow:hidden;
+}
+
+.pts-image{
+	height:118px;
+	width:155px;
+	 
+	overflow:hidden;
+	float:left;
+}
+
+div.st_vertical div.st_view_container{ min-height:1800px;}

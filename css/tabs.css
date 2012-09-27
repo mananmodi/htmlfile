@@ -1,0 +1,64 @@
+#tabContaier{
+	padding:14px 0 0;
+	position:relative;
+	width:690px;
+	float:left;
+}
+	#tabContaier ul.tabs{
+		width:683px;
+		float:left;
+		position:relative;
+		z-index:2;
+		padding-left:12px;
+	}
+	#tabContaier li{
+		float:left;
+		list-style:none;
+		display:inline;
+	}
+	#tabContaier li a{
+		background:url(../images/tab-bg.gif) left top repeat-x;
+		border:1px solid #d9d9d9;
+		border-bottom:none;
+		border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0; 
+		-webkit-border-radius:5px 5px 0 0;
+		color:#959595;
+		cursor:pointer;
+		display:block;
+		height:32px;
+		padding:0 23px;
+		text-decoration:none;
+		font:14px/32px 'ProximaNovaRgBold', Arial;
+		text-shadow:-1px 1px 1px #fff;
+		-moz-text-shadow:-1px 1px 1px #fff;
+		-webkit-text-shadow:-1px 1px 1px #fff;
+		margin-right:4px;
+		position:relative;
+		top:1px;
+		behavior:url(PIE.htc);
+	}
+	#tabContaier li a:hover{
+		background:url(../images/tab-bg.gif) left top repeat-x;
+	}
+	#tabContaier li a.active{
+		background:#fff;
+		border:1px solid #d9d9d9;
+		border-bottom:none;
+		color:#959595;
+	}
+	.tabDetails{
+		width:693px;
+		float:left;
+		border:1px solid #bfbfbf;
+	}
+	.tabContents{
+		padding:20px
+	}
+	.tabContents h1{
+		font:normal 24px/1.1em Georgia, "Times New Roman", Times, serif;
+		padding:0 0 10px;
+	}
+	.tabContents p{
+		padding:0 0 10px;
+	}

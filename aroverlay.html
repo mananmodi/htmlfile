@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>B002 A&R Room Overlay</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/rating.css"/>
+<link rel="stylesheet" type="text/css" href="fullScreenMusic/css/style.css "/>
+
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+</head>
+<body>
+<div id="popupID">
+  <div class="arOverlay">
+    <div class="arOverlayTop"></div>
+    <div class="arOverlayWrap">
+      <div class="aroverLayHeading">
+        <h2>Dynamo Records A&R Room</h2>
+        <span>1 of 12 unreviewed artists</span> </div>
+      <div class="clearfix">
+        <div class="orOverlayLeft">
+          <p>Now reviewing..</p>
+          <h3>The Black Lodge Band</h3>
+          <p>Indie Rock // London, Englandists</p>
+          <div class="raoverImg"><img src="images/raoverlay.jpg" alt="" /> </div>
+          <p class="orOverlayText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien mi. Sed vitae velit sed nunc facilisis consequat. In semper sapien nec massa ornare non ullamcorper metus lacinia. </p>
+          <a class="showMore" href="artist-champain.html">Show more +</a>
+          <ul>
+            <li><a href="#">Review later</a></li>
+            <li><a href="#">Skip this, it’s not for me</a></li>
+            <li><a href="#">I’m done reviewing artists now</a></li>
+          </ul>
+          <div class="whatAreYou"> <a href="#">What are your connections saying?</a> </div>
+        </div><div class="orOverRht">
+        <div class="orOverlayRight"> 
+        
+        	
+        	<img src="images/box-bottom.png" class="overlayBg" alt="" />
+          <div class="orOverlayRightWrap">
+            <ul class="pointsTable">
+              <li class="pointsWp">
+                <div class="numberTxtWrap">
+                  <div class="numberWrap">1 </div>
+                  <span>Listen</span> </div>
+                <div class="pointsTbl">
+                  <div class="pointsTop"> Samples (100 points) </div>
+                  <div class="pointsBg noDisplay">
+                    <ul>
+                      <li> <span class="fLeft">Bury the Fools</span> <a href="3"><img  class="tick" src="images/points-tick.png" alt="" /></a> <a href="3"><img class="shuffle" src="images/shuffle.png" alt="" /></a> </li>
+                      <li class="even"> <span class="fLeft">Go Home</span> </li>
+                      <li> <span class="fLeft">Two Choices</span> </li>
+                      <li class="even"> <span class="fLeft">Bury the Fools</span> <a href="3"><img  class="tick" src="images/points-tick.png" alt="" /></a> <a href="3"><img class="shuffle" src="images/shuffle.png" alt="" /></a> </li>
+                      <li> <span class="fLeft">Bury the Fools</span> <a href="3"><img  class="tick" src="images/points-tick.png" alt="" /></a> <a href="3"><img class="shuffle" src="images/shuffle.png" alt="" /></a> </li>
+                    </ul>
+                  </div>
+                  <div class="openPlayerContent">
+                  <ul class="playlist">
+    <li>
+        <a href="sample-music/1.mp3">Bury the Fools</a>
+    </li>
+    <li class="evenList">
+        <a href="sample-music/2.mp3">Go Home</a>
+    </li>
+    <li>
+        <a href="sample-music/1.mp3">Two Choices</a>
+    </li>
+     
+   
+
+</ul>
+     
+</div>
+                  
+
+                </div>
+              </li>
+              <li class="ratePoints">
+                <div class="numberTxtWrap">
+                  <div class="numberWrap">2 </div>
+                  <span>Rate</span> </div>
+                <div class="rateWrap"> <span>Rate: (50 points)</span>
+                  <div class="ratesStart">
+                    <input name="my_input" value="7" 
+id="rating_simple3" type="hidden">
+                  </div>
+                  <span class="great"> <span id="gtVal"></span> </span> </div>
+              </li>
+              <li class="writeReviewWrap">
+                <div class="numberTxtWrap">
+                  <div class="numberWrap">3 </div>
+                  <span>Review</span> </div>
+                <div class="writeReview">
+                  <label>Write a review: (50 points)</label>
+                  <div class="writeareview">
+                    <textarea rows="10" cols="10"></textarea>
+                  </div>
+                </div>
+               
+              </li>
+            </ul>
+            <div class="points">Points: 0 </div>
+            <div class="postReview"> <a href="#">Post and review next artist</a> <span>or</span>
+              <input type="button" value="SIGN the artist" class="signArtist" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arOverlayBottm"> </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.rating.js"></script>
+
+ <script type="text/javascript" src="fullScreenMusic/soundmanager/script/soundmanager2.js"></script>
+    <script type="text/javascript" src="fullScreenMusic/ttwFullScreenMusic.js"></script>
+    
+  
+    
+<script language="javascript" type="text/javascript">
+            function test(value){
+                //alert("This rating's value is "+value);
+				if(value=="0"){
+					document.getElementById("gtVal").innerHTML = "";
+			 	}
+				else if(value=="1"){
+					document.getElementById("gtVal").innerHTML = "Not for Me";
+			 	}else if (value=="2"){
+					document.getElementById("gtVal").innerHTML = "Ok";
+				}else if (value=="3"){
+					document.getElementById("gtVal").innerHTML = "Good";
+				}else if (value=="4"){
+					document.getElementById("gtVal").innerHTML = "Great";
+				}else if (value=="5"){
+					document.getElementById("gtVal").innerHTML = "Awesome";
+				}
+				
+            }
+       $(function() {
+    	$("#rating_simple3").webwidget_rating_sex({
+                    rating_star_length: '5',
+                    rating_initial_value: '0',
+                    rating_function_name: 'test',//this is function name for click
+                    directory: 'images/'
+                });
+				test(0);
+            });
+			
+$(window).load(function() {
+ // executes when complete page is fully loaded, including all frames, objects and images
+	
+}); 
+
+      /**
+         * These are soundManager settings. There
+         * is no need to change them unless you have
+         * read the soundManager documentation
+         * **/
+
+        soundManager.flashVersion = 9;
+        soundManager.useHighPerformance = true;
+        soundManager.wmode = 'transparent';
+        soundManager.useFastPolling = true;
+        soundManager.url = 'fullScreenMusic/soundmanager/swf/';
+        soundManager.debugMode = false;
+
+        /**
+         * Fullscreen music initialization
+         * Always make sure this call is wrapped in
+         * soundManager.onload to ensure all dependencies are loaded
+         * */
+
+        soundManager.onload = function()
+        {
+            $('.playlist').ttwFullScreenMusic({style:'minimal'});
+        }
+
+
+
+        </script>
+        
+        
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+</body>
+</html>

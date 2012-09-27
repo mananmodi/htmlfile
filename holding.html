@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width" />
+<title>Holding</title>
+<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+</head>
+<body>
+<div class="holdingBg">
+  <div class="holdingImg"><img src="images/holding.png" alt="" /> </div>
+  <div class="holdingWrap">
+    <p class="bePart">Be part of the music.</p>
+    <p class="projectNum">project: #<span>crowd</span>bass</p>
+    <p class="readyToLauch">Ready to launch in</p>
+    <div id="circular" class="counterWrap">
+      <!-- coconut countdown container -->
+      <div id="circular-countdown" class="float-left googlefont font-32"> </div>
+      <!-- coconut countdown container end -->
+      <span id="message-box" class="standard-color width-100-p block font-12 italic float-left"></span> </div>
+    <div class="clearfix twitterFollow"> 
+    	<div class="twitterFollowWrap">
+    	<img src="images/twiiter-holding.png" alt="Twitter" />
+      		<p><a href="https://twitter.com/@crowdbass" target="_blank">@crowdbass</a> <em>Follow us and find out what it’s all about when we launch.</em></p>
+            
+          </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- the countdown plugin -->
+<script type="text/javascript" rel="javascript" src="js/coconut.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+		
+$("#circular-countdown").coconut({
+	color : "#f25d28",
+	startDate: "06/09/2012",
+	endTime : "21:32:43",
+	endDate: "21/09/2012",
+	wordDays : "d", 
+	wordHours : "h",
+	wordMinutes : "m",
+	wordSeconds : "s"
+});
+
+
+
+});  
+</script>
+</body>
+</html>

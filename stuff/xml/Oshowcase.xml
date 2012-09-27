@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<showcase total='1500' symbol='' point='2' multiplier="12" spread='5000'>
+<asset ptValue ="0">
+		<description><![CDATA[<strong>Drag the slider along to change the number of contracts you could buy to determine:</strong><br />&bull;  How many points you will earn your label<br />
+&bull;  How much money you could make<br />
+&bull;  The special rewards you can achieve<br />
+&bull;  The amount it will cost<br /><span class="pts-text-amount"> Earn Points</span>]]>
+</description>
+		 <image>stuff/imgs/image-0.jpg</image>
+	</asset>
+	<asset ptValue ="5000">
+		<description><![CDATA[<strong>3 – 4 Contracts</strong><br />A shout-out on our official Twitter Feed <br />
+		 
+		]]>
+		
+		
+		</description>
+		<image>stuff/imgs/image-0.jpg</image>
+	</asset>
+	<asset ptValue ="10000">
+		<description><![CDATA[<strong>Lorem ipsum dolor</strong><br /> sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci <br /><span class="pts-text-amount"> Points: 10,000</span>]]></description>
+		<image>stuff/imgs/image-0.jpg</image>
+	</asset>
+	<asset ptValue ="15000">
+		<description><![CDATA[<strong>Lorem ipsum dolor</strong><br /> sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci <br /><span class="pts-text-amount"> Points: 15,000</span>]]></description>
+		<image>stuff/imgs/image-0.jpg</image>
+	</asset>
+	<asset ptValue ="20000">
+		<description><![CDATA[<strong>Lorem ipsum dolor</strong><br /> sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci <br /><span class="pts-text-amount"> Points: 20,000</span>]]></description>
+		<image>stuff/imgs/image-0.jpg</image>
+	</asset>
+	<asset ptValue ="25000">
+		<description><![CDATA[<strong>Lorem ipsum dolor</strong><br /> sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci <br /><span class="pts-text-amount"> Points: 25,000</span>]]></description>
+		<image>stuff/imgs/image-5.jpg</image>
+	</asset>
+	<asset ptValue ="30000">
+		<description><![CDATA[<strong>Lorem ipsum dolor</strong><br /> sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci <br /><span class="pts-text-amount"> Points: 30,000</span>]]></description>
+		<image>stuff/imgs/image-6.jpg</image>
+	</asset>
+		<asset ptValue ="35000">
+		<description><![CDATA[<strong>Lorem ipsum dolor</strong><br /> sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci <br /><span class="pts-text-amount"> Points: 35,000</span>]]></description>
+		<image>stuff/imgs/image-7.jpg</image>
+	</asset>
+</showcase>

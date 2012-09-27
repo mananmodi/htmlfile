@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Add Some Point</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="css/general.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style01.css" />
+<!--[if IE]>
+ <link rel="stylesheet" type="text/css" href="css/ie-style.css"/>
+<![endif]-->
+</head>
+<body class="noBg">
+<div id="container" >
+  <div id="header">
+    <div class="container_12">
+      <h1 class="grid_4 alpha"><a href="index.html"><img src="images/crowdbass.png" alt="crowdbass" title="crowdbass" /></a></h1>
+      <div class="headerRight">
+        <div class="headerPoints">
+          <label>Dynamo Records</label>
+          <span>717 Points</span></div>
+      </div>
+    </div>
+    <div id="mainNav">
+      <div class="container_12">
+        <ul>
+          <li><a href="#">Find Arttists</a></li>
+          <li><a href="#">Our Managers</a></li>
+          <li><a href="#">Charts</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Get in Touch</a></li>
+        </ul>
+        <span id="socialNetwork"> <a href="#"><img src="images/facebook-icon.gif" alt="Facebook" /></a> <a href="#"><img src="images/twitter-icon.gif" alt="Twitter" /></a> </span> </div>
+    </div>
+  </div>
+  <div class="clearfix addSomeFund" >
+    <div id="addSomeFundWrap" class="container_12">
+      <div class="addSomeFundWrap">
+        <div class="validationMsg">
+          <p class="thankYou">Add some funds to your account so you can start to sign artists to your label immediately. You can withdraw your funds at any time.</p>
+          <span class="cancel"></span> </div>
+        <div class="lestAddFundWrap">
+          <div class="lestAddFundL">
+            <div class="lestAddFundH">
+              <h2>Add funds to your account</h2>
+              <a href="#">No thanks. I don’t want to add funds yet</a> </div>
+            <div class="lestAddFunds">
+              <ul>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£5</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£10</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£15</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd" checked="checked"/>
+                  <label>£20</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£30</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£40</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£50</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£60</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£70</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£100</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£200</label>
+                </li>
+                <li>
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>£500</label>
+                </li>
+                <li class="last">
+                  <input type="radio"  class="styled" name="letsadd"/>
+                  <label>Other</label>
+                  <div class="otherLbl">
+                    <input type="text" />
+                  </div>
+                  <span class="lbl">otherplease enter whole pounds only</span></li>
+                <li></li>
+              </ul>
+              <div class="howdoYoWant">
+                <h3>How do you want to pay?</h3>
+                <div class="paypalVisas"> <img src="images/paypal.png" alt="" class="paypal"  /> <img src="images/visa.png" alt="" /> <img src="images/master-card.png" alt="" /> </div>
+                <div class="purchaseWrap">
+                	<input type="button" value="Purchase with Paypal" class="purchaseWith" /> <input type="button"  value="Purchase with Visa or Mastercard" class="purchaseVisa"/>
+                </div>
+                <p class="youWill">You will be transferred to a secure<br />PayPal page, then returned to<br />Crowdbass after payment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="lestAddFundR">
+            <h3>How much should I add?</h3>
+            <p>That’s really up to you. Each contract costs £15, so it depends on how many contracts you want to buy.</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+		$("#header").hover(function() {
+			 $("#mainNav").slideDown(400);
+			 //alert("call");
+		}, function() {
+			 $("#mainNav").slideUp(400);
+		});
+		
+		
+		
+		});
+		
+ 	$("span.cancel").click(function() {
+				  $('.validationMsg').fadeOut('slow', function() {
+  					//  alert('Animation complete.');
+ 					 });
+	  	});
+</script>
+<script type="text/javascript" src="js/form-element.js"></script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+</body>
+</html>
