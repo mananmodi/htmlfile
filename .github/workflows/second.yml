@@ -18,6 +18,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Install Dependencies (Java/Node/Python)
+        env: 
+          APP_ENV: development
+        run: echo Environment $APP_ENV
+
+
       # ------------------------------------------------------
       # STEP 2 → INSTALL DEPENDENCIES (SIMULATED)
       # ------------------------------------------------------
@@ -101,3 +107,12 @@ jobs:
       # ------------------------------------------------------
       - name: Final Status
         run: echo "CI pipeline finished."
+
+      - name: Intentional Failure (Debug Demo)
+        run: |
+          echo "Simulating failure for debugging..."
+          exit 1
+
+      - name: Failure Handler
+        if: failure()
+        run: echo "Pipeline failed. Check logs above!"
