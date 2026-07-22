@@ -4,8 +4,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
-  push:
-  pull_request:
+  #push:
+  #pull_request:
+
 
 jobs:
   ci-pipeline:
@@ -21,7 +22,8 @@ jobs:
       - name: Install Dependencies (Java/Node/Python)
         env: 
           APP_ENV: development
-        run: echo Environment $APP_ENV
+          DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+        run: echo "Environment $APP_ENV is using DB password $DB_PASSWORD"
 
 
       # ------------------------------------------------------
