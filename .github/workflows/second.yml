@@ -23,7 +23,7 @@ jobs:
         env: 
           APP_ENV: development
           DB_PASSWORD: ${{secrets.DB_PASSWORD}}
-        run: echo "Environment $APP_ENV is using DB password $DB_PASSWORD"
+        run: echo Environment $APP_ENV is using DB password $DB_PASSWORD
 
 
       # ------------------------------------------------------
