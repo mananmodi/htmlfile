@@ -4,9 +4,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
-  push:
-  pull_request:
-
+  #push:
+  #pull_request:
+  workflow_dispatch:
 
 jobs:
   ci-pipeline:
